@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Login Form</title>
+<script>
+function myFunction()
+{
+var un = document.forms["myForm"]["Uname"].value;
+var pw = document.forms["myForm"]["Pass"].value;
+if(un=="student" && pw=="1234")
+{
+window.location.href="welcome.html";
+}
+else
+{
+alert("Invalid UserName and Password");
+}
+}
+</script>
+<style>
+body
+{
+margin: 0;
+padding: 0;
+background: url(image.jfif)no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+font-family: sans-serif;
+}
+.box
+{
+background: #f5f5f5;
+color: red;
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%,-50%);
+div1-sizing: border-box;
+padding: 70px 70px;
+}
+h2
+{
+margin: 0;
+padding: 0 0 20px;
+text-align: center;
+font-size: 22px;
+color: black;
+}
+label
+{
+color: #f49126;
+margin: 0;
+padding: 0;
+font-weight: bold;
+}
+.inputText
+{
+width:300px;
+height:30px;
+border:none;
+border-radius:2px;
+padding-left:8px;
+}
+#logButton
+{
+width:300px;
+height:30px;
+border:none;
+border-radius:10px;
+padding-left:7px;
+color:black;
+fornt-size:16px
+}
+</style>
+</head>
+<body>
+<div class="box">
+<form name="myForm" method="post">
+<h2>login </h2>
+<label>User Name</label>
+<input type="text"  name="Uname" class="input text" placeholder="User Name">
+<br><br>
+<label>Password</label>
+<input type="password" name="Pass" class="input text" placeholder="Password">
+<br><br>
+<input type="button" name="log" id="logButton" value="Login" onclick="myFunction()">
+<a href="register.html">Register for new account ?</a>
+</form>
+
+</div>
+</body>
+</html>
